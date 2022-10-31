@@ -1,3 +1,6 @@
+.header {
+  margin-top: 2.25rem;
+}
 @media (min-width: 40em) {
   .header {
     display: -webkit-box;
@@ -6,5 +9,13 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+}
+.header__subtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--dark-text1);
 }/*# sourceMappingURL=header.css.map */
