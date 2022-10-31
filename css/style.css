@@ -54,6 +54,16 @@ a:active {
   text-decoration: none;
 }
 
+.container {
+  max-width: 69.375rem;
+  padding: 0 1.5625rem;
+}
+@media (min-width: 87.5) {
+  .container {
+    padding: 0;
+  }
+}
+
 .card {
   padding: 1.25rem;
 }
