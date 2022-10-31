@@ -53,7 +53,7 @@ h3 {
 h1 {
   font-size: 1.5rem;
 }
-@media (min-width: 59.375em) {
+@media (min-width: 71.875em) {
   h1 {
     font-size: 1.75rem;
   }
@@ -70,13 +70,13 @@ a:active {
   padding: 0 1.5625rem;
   margin: 0 auto;
 }
-@media (min-width: 59.375em) {
+@media (min-width: 71.875em) {
   .container {
     padding: 0;
   }
 }
 
-@media (min-width: 59.375em) {
+@media (min-width: 71.875em) {
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
