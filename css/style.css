@@ -59,7 +59,7 @@ a:active {
   padding: 0 1.5625rem;
   margin: 0 auto;
 }
-@media (min-width: 87.5) {
+@media (min-width: 59.375em) {
   .container {
     padding: 0;
   }
