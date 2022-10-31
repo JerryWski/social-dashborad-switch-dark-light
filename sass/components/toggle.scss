@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 .toggle {
     &__button {
         border-radius: 50%;
