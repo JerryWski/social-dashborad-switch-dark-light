@@ -1,9 +1,15 @@
+@use "../utils" as *;
+
 .header {
+    @include breakpoint(medium) {
+        display: flex;
+        justify-content: space-between;
+    }
     &__title {
 
     }
 
     &__toogle {
-        
+
     }
 }

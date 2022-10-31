@@ -22,7 +22,7 @@
 }
 
 :root {
-  --font:"Inter", sans-serif;
+  --font:"Inter",Georgia, sans-serif;
 }
 
 html {
@@ -40,12 +40,23 @@ body {
   margin: 0;
   padding: 0;
   font-weight: var(--font);
+  background-color: var(--dark-bg);
+  color: var(--dark-text2);
 }
 
 h1,
 h2,
 h3 {
   margin-top: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+@media (min-width: 59.375em) {
+  h1 {
+    font-size: 1.75rem;
+  }
 }
 
 a,
@@ -65,6 +76,16 @@ a:active {
   }
 }
 
+@media (min-width: 59.375em) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .toggle {
   border: none;
 }
