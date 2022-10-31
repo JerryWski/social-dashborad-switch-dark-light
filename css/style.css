@@ -65,13 +65,16 @@ a:active {
   }
 }
 
-.card {
-  padding: 1.25rem;
+.toggle {
+  border: none;
 }
-
 .toggle__button {
   border-radius: 50%;
   width: 1rem;
   height: 1rem;
   background-color: var(--toggle-dot);
+}
+
+.card {
+  padding: 1.25rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,10 +1,22 @@
 @use "../utils" as *;
 
 .toggle {
-    &__button {
-        border-radius: 50%;
-        width:rem(16);
-        height: rem(16);
-        background-color: var(--toggle-dot);
-    }
+  border: none;
+
+  &__wrapper {
+  }
+  input[type="radio"] {
+  }
+&__background {
+
+}
+  &__button {
+    border-radius: 50%;
+    width: rem(16);
+    height: rem(16);
+    background-color: var(--toggle-dot);
+  }
+}
+label {
+    
 }
