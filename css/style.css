@@ -76,7 +76,7 @@ a:active {
   }
 }
 
-@media (min-width: 71.875em) {
+@media (min-width: 40em) {
   .header {
     display: -webkit-box;
     display: -ms-flexbox;

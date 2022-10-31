@@ -1,7 +1,7 @@
 @use "../utils" as *;
 
 .header {
-    @include breakpoint(medium) {
+    @include breakpoint(small) {
         display: flex;
         justify-content: space-between;
     }
