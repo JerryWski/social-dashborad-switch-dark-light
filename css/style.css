@@ -97,7 +97,7 @@ a:active {
 .header__subtitle {
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--dark-text1);
+  color: var(--dark-text1) !important;
 }
 
 .toggle {
