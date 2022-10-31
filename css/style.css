@@ -57,6 +57,7 @@ a:active {
 .container {
   max-width: 69.375rem;
   padding: 0 1.5625rem;
+  margin: 0 auto;
 }
 @media (min-width: 87.5) {
   .container {
