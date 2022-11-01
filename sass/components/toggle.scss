@@ -14,7 +14,7 @@
      justify-self: end;
     }
     &[for="default"] {
-      grid-column: 2 / 3;
+      grid-column: 1 / 4;
       grid-row: 2 / 3;
       justify-self: center;
     }
@@ -31,6 +31,7 @@
   }
   input[type="radio"] {
     opacity: 0;
+    margin: 0;
   }
   &__background {
     border-radius: rem(12);
@@ -44,12 +45,22 @@
       var(--toggle-bg-end) 0%,
       var(--toggle-bg-start) 98.02%
     );
+    pointer-events: none;
   }
   &__button {
+    position: absolute;
+    left: rem(3);
+    top: rem(3);
+    right: 100%;
     border-radius: 50%;
-    width: rem(16);
-    height: rem(16);
-    background-color: var(--toggle-dot);
-  }
+    width: rem(18);
+    height: rem(18);
+    background-color: var(--dark-bg);
 
+  
+  }
+#light:checked ~ .toggle__button {
+  left: calc(100% - rem(21));
+  right: rem(3);
+}
 }

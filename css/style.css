@@ -102,6 +102,7 @@ a:active {
 
 .toggle {
   display: grid;
+  gap: 0.75rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   border: none;
@@ -111,7 +112,7 @@ a:active {
   justify-self: end;
 }
 .toggle label[for=default] {
-  grid-column: 2/3;
+  grid-column: 1/4;
   grid-row: 2/3;
   justify-self: center;
 }
@@ -126,6 +127,7 @@ a:active {
 }
 .toggle input[type=radio] {
   opacity: 0;
+  margin: 0;
 }
 .toggle__background {
   border-radius: 0.75rem;
@@ -135,12 +137,21 @@ a:active {
   display: block;
   height: 100%;
   background: linear-gradient(225deg, var(--toggle-bg-end) 0%, var(--toggle-bg-start) 98.02%);
+  pointer-events: none;
 }
 .toggle__button {
+  position: absolute;
+  left: 0.1875rem;
+  top: 0.1875rem;
+  right: 100%;
   border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--toggle-dot);
+  width: 1.125rem;
+  height: 1.125rem;
+  background-color: var(--dark-bg);
+}
+.toggle #light:checked ~ .toggle__button {
+  left: calc(100% - 1.3125rem);
+  right: 0.1875rem;
 }
 
 .card {
