@@ -128,6 +128,8 @@ a:active {
 .toggle input[type=radio] {
   opacity: 0;
   margin: 0;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 .toggle__background {
   border-radius: 0.75rem;
@@ -148,10 +150,18 @@ a:active {
   width: 1.125rem;
   height: 1.125rem;
   background-color: var(--dark-bg);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .toggle #light:checked ~ .toggle__button {
   left: calc(100% - 1.3125rem);
   right: 0.1875rem;
+}
+.toggle #default:checked ~ .toggle__button {
+  left: 50%;
+  right: auto;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .card {
