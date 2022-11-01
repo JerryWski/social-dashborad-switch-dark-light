@@ -40,6 +40,10 @@
     margin: 0 -2px 0 -2px;
     height: rem(20);
     width: rem(24);
+
+    &:focus ~ .toggle__button {
+      border: 2px solid #fff;
+    }
   }
   &__background {
     border-radius: rem(12);
