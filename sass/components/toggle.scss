@@ -31,8 +31,8 @@
   }
   input[type="radio"] {
     opacity: 0;
-    margin: 0;
-    height: rem(24);
+    margin: 0 -2px 0 -2px;
+    height: rem(20);
     width: rem(24);
   }
   &__background {
