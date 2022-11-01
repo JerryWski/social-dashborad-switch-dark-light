@@ -1,16 +1,36 @@
 .toggle {
   display: grid;
+  gap: 0.75rem;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   border: none;
 }
+.toggle label[for=dark] {
+  grid-column: 1/2;
+  justify-self: end;
+}
+.toggle label[for=default] {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+}
+.toggle label[for=light] {
+  grid-column: 3/4;
+}
 .toggle__wrapper {
+  position: relative;
   height: 1.5rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 .toggle input[type=radio] {
   opacity: 0;
 }
 .toggle__background {
   border-radius: 0.75rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
   display: block;
   height: 100%;
   background: linear-gradient(225deg, var(--toggle-bg-end) 0%, var(--toggle-bg-start) 98.02%);
