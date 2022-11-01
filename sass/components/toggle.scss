@@ -1,35 +1,41 @@
 @use "../utils" as *;
 
 .toggle {
-  
   display: grid;
-  gap: rem(12);
+  gap: rem(4.7) rem(7.5);
   grid-template-columns: 1fr rem(70) 1fr;
   grid-template-rows: repeat(2, 1fr);
   border: none;
+  margin: 0;
+  cursor: pointer;
 
   label {
+    font-size: rem(14);
+    justify-self: center;
     &[for="dark"] {
-     grid-column: 1 / 2;
-     justify-self: end;
+      grid-column: 1 / 2;
+      align-self: center;
     }
     &[for="default"] {
       grid-column: 1 / 4;
       grid-row: 2 / 3;
       justify-self: center;
+      align-self: start;
     }
     &[for="light"] {
       grid-column: 3 / 4;
+      align-self: center;
     }
   }
   &__wrapper {
+    
     position: relative;
     height: rem(24);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-
   }
   input[type="radio"] {
+    cursor: pointer;
     opacity: 0;
     margin: 0 -2px 0 -2px;
     height: rem(20);
@@ -58,18 +64,15 @@
     width: rem(18);
     height: rem(18);
     background-color: var(--dark-bg);
-    transition: all .2s ease-out;
-
-  
+    transition: all 0.2s ease-out;
   }
-#light:checked ~ .toggle__button {
-  left: calc(100% - rem(21));
-  right: rem(3);
-}
-#default:checked ~ .toggle__button {
-  left: 50%;
-  right: auto;
-  transform: translate(-50%);
- 
-}
+  #light:checked ~ .toggle__button {
+    left: calc(100% - rem(21));
+    right: rem(3);
+  }
+  #default:checked ~ .toggle__button {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%);
+  }
 }

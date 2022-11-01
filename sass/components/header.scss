@@ -2,12 +2,19 @@
 
 .header {
     margin-top: rem(36);
+    display: flex;
+    flex-wrap: wrap;
     @include breakpoint(small) {
-        display: flex;
+        
         justify-content: space-between;
         align-items: center;
     }
     &__title {
+        width: 100%;
+
+        @include breakpoint(small) {
+            width: auto;
+        }
 
     }
 
@@ -17,7 +24,7 @@
         color: var(--dark-text1);
     }
 
-    // &__toogle {
-
-    // }
-}
+    &__toogle {
+        margin-left: auto;
+    }
+}  
