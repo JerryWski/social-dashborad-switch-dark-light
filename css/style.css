@@ -103,6 +103,18 @@ a:active {
 .toggle {
   border: none;
 }
+.toggle__wrapper {
+  height: 1.5rem;
+}
+.toggle input[type=radio] {
+  opacity: 0;
+}
+.toggle__background {
+  border-radius: 0.75rem;
+  display: block;
+  height: 100%;
+  background: linear-gradient(225deg, var(--toggle-bg-end) 0%, var(--toggle-bg-start) 98.02%);
+}
 .toggle__button {
   border-radius: 50%;
   width: 1rem;
