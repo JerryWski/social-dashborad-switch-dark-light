@@ -27,6 +27,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: rem(28);
     }
 
     &__icon {
@@ -51,11 +52,28 @@
     }
 
     &__username {
-
+        font-size: rem(12);
+        font-weight: 700;
     }
 
     &__count {
-        
+        color: #fff;
+
+        &--big {
+            font-size: rem(56);
+        }
+
+        &--small {
+            
+        }
+    }
+
+    &__label {
+
+    }
+
+    &__change {
+
     }
 
 

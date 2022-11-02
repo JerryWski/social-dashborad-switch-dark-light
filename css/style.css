@@ -22,7 +22,7 @@
 }
 
 :root {
-  --font:"Inter",Georgia, sans-serif;
+  font-family: "Inter", Georgia, sans-serif;
 }
 
 html {
@@ -206,7 +206,18 @@ a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1.75rem;
 }
 .card__icon {
   margin-right: 0.5rem;
+}
+.card__username {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.card__count {
+  color: #fff;
+}
+.card__count--big {
+  font-size: 3.5rem;
 }/*# sourceMappingURL=style.css.map */
