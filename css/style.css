@@ -195,6 +195,10 @@ a:active {
   width: 15.9375rem;
   text-align: center;
   padding: 1.5625rem;
+  border-radius: 0.3125rem;
+}
+.card--facebook {
+  border-top: 0.3125rem solid var(--facebook);
 }
 .card__platform {
   display: -webkit-box;
@@ -215,9 +219,45 @@ a:active {
   font-size: 0.75rem;
   font-weight: 700;
 }
+.card__followers {
+  margin-bottom: 1.5625rem;
+}
 .card__count {
   color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.125rem;
+  margin-bottom: 0.375rem;
+  line-height: 1;
 }
 .card__count--big {
   font-size: 3.5rem;
+}
+.card__label {
+  color: var(--dark-text1);
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+}
+.card__change {
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__change img {
+  margin-right: 0.4375rem;
+}
+.card__change--up {
+  color: var(--limegreen);
+}
+.card__change--down {
+  color: var(--brightred);
 }/*# sourceMappingURL=style.css.map */

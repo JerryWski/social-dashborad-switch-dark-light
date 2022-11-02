@@ -6,9 +6,10 @@
     width: rem(255); //temp
     text-align: center;
     padding: rem(25);
+    border-radius: rem(5);
 
     &--facebook {
-
+        border-top: rem(5) solid var(--facebook);
     }
 
     &--twitter {
@@ -56,24 +57,52 @@
         font-weight: 700;
     }
 
+    &__followers {
+        margin-bottom: rem(25);
+    }
+
     &__count {
         color: #fff;
-
+        font-weight: 700;
+        letter-spacing: rem(-2);
+        margin-bottom: rem(6);
+        line-height: 1;
         &--big {
             font-size: rem(56);
+            
         }
 
         &--small {
-            
+
         }
     }
 
     &__label {
-
+        color: var(--dark-text1);
+        font-size: rem(12);
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: rem(5);
+        
     }
 
     &__change {
+        font-size: rem(12);
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        img {
+            margin-right: rem(7);
+        }
+        &--up {
+            color: var(--limegreen);
+        }
+
+        &--down {
+            color: var(--brightred);
+        }
     }
 
 
