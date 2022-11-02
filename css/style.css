@@ -215,6 +215,12 @@ a:active {
 .card--facebook {
   border-top: 0.3125rem solid var(--facebook);
 }
+.card--twitter {
+  border-top: 0.3125rem solid var(--twitter);
+}
+.card--youtube {
+  border-top: 0.3125rem solid var(--youtube);
+}
 .card__platform {
   display: -webkit-box;
   display: -ms-flexbox;
