@@ -17,6 +17,8 @@
 .card {
   background-color: var(--dark-card);
   color: var(--dark-text1);
+  position: relative;
+  overflow: hidden;
   text-align: center;
   padding: 1.5625rem;
   border-radius: 0.3125rem;
@@ -27,10 +29,24 @@
 .card--twitter {
   border-top: 0.3125rem solid var(--twitter);
 }
+.card--instagram {
+  padding-top: 1.875rem;
+}
+.card--instagram::before {
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 0.3125rem;
+  width: 100%;
+  background: linear-gradient(225deg, var(--instagram-end), var(--instagram-center) 50.91%, var(--instagram-start) 100%);
+}
 .card--youtube {
   border-top: 0.3125rem solid var(--youtube);
 }
 .card__platform {
+  margin-top: 0.3125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +57,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.75rem;
+  height: 1.25rem;
 }
 .card__icon {
   margin-right: 0.5rem;
