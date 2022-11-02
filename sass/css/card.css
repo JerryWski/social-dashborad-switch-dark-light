@@ -1,7 +1,22 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.875rem;
+}
+@media (min-width: 40em) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 71.875em) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .card {
   background-color: var(--dark-card);
   color: var(--dark-text1);
-  width: 15.9375rem;
   text-align: center;
   padding: 1.5625rem;
   border-radius: 0.3125rem;
