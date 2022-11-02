@@ -1,5 +1,6 @@
 @use "../utils" as *;
 
 .card {
-    padding: rem(20);
+    background-color: var(--dark-card);
+    color: var(--dark-text1)
 }
