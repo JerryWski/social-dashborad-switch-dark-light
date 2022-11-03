@@ -1,4 +1,5 @@
 :root {
+    --background: var(--dark-bg);
     --limegreen: hsl(163, 72%, 41%);
     --brightred: hsl(356, 69%, 56%);
     --facebook: hsl(208, 92%, 53%);
@@ -21,4 +22,8 @@
     --light-text1:hsl(228, 12%, 44%);
     --light-text2:hsl(230, 17%, 14%);
     --card-hover:hsl(228,25%,27%);
+}
+
+@media (prefers-color-scheme: dark) {
+
 }
