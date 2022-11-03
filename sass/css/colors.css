@@ -1,5 +1,4 @@
 :root {
-  --background: var(--light-bg);
   --limegreen: hsl(163, 72%, 41%);
   --brightred: hsl(356, 69%, 56%);
   --facebook: hsl(208, 92%, 53%);
@@ -22,6 +21,7 @@
   --light-card-hover: hsl(228,33%, 91%);
   --light-text1:hsl(228, 12%, 44%);
   --light-text2:hsl(230, 17%, 14%);
+  --background: var(--light-bg);
   --card-hover:hsl(228,25%,27%);
   --text-color: var(--light-text2);
   --text-color2: var(--light-text1);

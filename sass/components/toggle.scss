@@ -13,6 +13,7 @@
     font-size: rem(14);
     justify-self: center;
     color: var(--toggle);
+
     &[for="dark"] {
       grid-column: 1 / 2;
       align-self: center;
@@ -44,11 +45,7 @@
     top: 0;
     display: block;
     height: 100%;
-    background: linear-gradient(
-      225deg,
-      var(--toggle-bg-end) 0%,
-      var(--toggle-bg-start) 98.02%
-    );
+    background-color: var(--toggle-bg);
     pointer-events: none;
   }
   &__button {
@@ -59,7 +56,7 @@
     border-radius: 50%;
     width: rem(18);
     height: rem(18);
-    background-color: var(--dark-bg);
+    background-color: var(--toggle-button);
     transition: all 0.2s ease-out;
   }
   #light:checked ~ .toggle__button {
