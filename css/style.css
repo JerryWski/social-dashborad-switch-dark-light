@@ -311,11 +311,15 @@ a:active {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   justify-items: start;
+  gap: 1.875rem;
 }
 .card-grid .bottom-image {
   justify-self: end;
+}
+.card-grid .card__bottomtitle {
+  font-size: 0.8125rem;
 }
 .card-grid .card__count {
   margin-bottom: 0;

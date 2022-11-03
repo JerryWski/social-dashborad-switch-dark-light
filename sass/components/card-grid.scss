@@ -4,14 +4,15 @@
 .card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     justify-items: start;
+    gap: rem(30);
 
     .bottom-image {
         justify-self: end;
     }
     .card__bottomtitle {
-        
+        font-size: rem(13);
     }
 
     .card__count {
