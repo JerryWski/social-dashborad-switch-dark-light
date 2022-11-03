@@ -5,4 +5,22 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    justify-items: start;
+
+    .bottom-image {
+        justify-self: end;
+    }
+    .card__bottomtitle {
+        
+    }
+
+    .card__count {
+        margin-bottom: 0;
+    }
+
+    .card__change {
+        justify-self: end;
+        align-self: end;
+    }
+    
 }

@@ -312,4 +312,16 @@ a:active {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  justify-items: start;
+}
+.card-grid .bottom-image {
+  justify-self: end;
+}
+.card-grid .card__count {
+  margin-bottom: 0;
+}
+.card-grid .card__change {
+  justify-self: end;
+  -ms-flex-item-align: end;
+      align-self: end;
 }/*# sourceMappingURL=style.css.map */
