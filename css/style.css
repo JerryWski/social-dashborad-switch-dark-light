@@ -20,6 +20,7 @@
   --light-card:hsl(227, 47%, 96%);
   --light-text1:hsl(228, 12%, 44%);
   --light-text2:hsl(230, 17%, 14%);
+  --card-hover:hsl(228,25%,27%);
 }
 
 :root {
@@ -214,6 +215,9 @@ a:active {
   text-align: center;
   padding: 1.5625rem;
   border-radius: 0.3125rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 .card--facebook {
   border-top: 0.3125rem solid var(--facebook);
@@ -306,6 +310,10 @@ a:active {
 }
 .card__change--down {
   color: var(--brightred);
+}
+
+.card:hover {
+  background-color: var(--card-hover);
 }
 
 .card-grid {
