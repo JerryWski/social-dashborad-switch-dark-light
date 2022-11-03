@@ -1,1 +1,5 @@
-/*# sourceMappingURL=card-grid.css.map */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}/*# sourceMappingURL=card-grid.css.map */
