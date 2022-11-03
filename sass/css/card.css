@@ -15,7 +15,7 @@
 }
 
 .card {
-  background: var(--card-bg);
+  background: var(--dark-card);
   color: var(--dark-tex1);
   position: relative;
   overflow: hidden;
@@ -122,5 +122,5 @@
 }
 
 .card:hover {
-  background-color: var(--card-hover);
+  background-color: var(--dark-card-hover);
 }/*# sourceMappingURL=card.css.map */

@@ -39,7 +39,7 @@
   top: 0;
   display: block;
   height: 100%;
-  background-color: var(--toggle-bg);
+  background: linear-gradient(225deg, var(--toggle-bg-end) 0%, var(--toggle-bg-start) 98%);
   pointer-events: none;
 }
 .toggle__button {
@@ -50,7 +50,7 @@
   border-radius: 50%;
   width: 1.125rem;
   height: 1.125rem;
-  background-color: var(--toggle-button);
+  background-color: var(--dark-card);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
