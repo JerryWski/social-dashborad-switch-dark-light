@@ -11,6 +11,7 @@
 
   label {
     font-size: rem(14);
+    font-weight: 700;
     justify-self: center;
     color: var(--toggle);
 
@@ -29,7 +30,7 @@
     cursor: pointer;
     opacity: 0;
     margin: 0 1px 0 -2px;
-    height: rem(20);
+    height: rem(24);
     width: rem(24);
 
     &:focus ~ .toggle__button {
