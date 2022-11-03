@@ -59,6 +59,10 @@
   margin-bottom: 1.75rem;
   height: 1.25rem;
 }
+.card__bottomtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
 .card__icon {
   margin-right: 0.5rem;
 }
@@ -78,6 +82,9 @@
 }
 .card__count--big {
   font-size: 3.5rem;
+}
+.card__count--small {
+  font-size: 2rem;
 }
 .card__label {
   color: var(--dark-text1);
