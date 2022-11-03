@@ -118,7 +118,7 @@ a:active {
 .toggle {
   display: grid;
   gap: 0.29375rem 0.46875rem;
-  grid-template-columns: 1fr 4.375rem 1fr;
+  grid-template-columns: 1fr 3.4375rem 1fr;
   grid-template-rows: repeat(2, 1fr);
   border: none;
   margin: 0;
@@ -132,16 +132,6 @@ a:active {
   grid-column: 1/2;
   align-self: center;
 }
-.toggle label[for=default] {
-  grid-column: 1/4;
-  grid-row: 2/3;
-  justify-self: center;
-  align-self: start;
-}
-.toggle label[for=light] {
-  grid-column: 3/4;
-  align-self: center;
-}
 .toggle__wrapper {
   position: relative;
   height: 1.5rem;
@@ -151,7 +141,7 @@ a:active {
 .toggle input[type=radio] {
   cursor: pointer;
   opacity: 0;
-  margin: 0 -2px 0 -2px;
+  margin: 0 1px 0 -2px;
   height: 1.25rem;
   width: 1.5rem;
 }

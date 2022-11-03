@@ -3,7 +3,7 @@
 .toggle {
   display: grid;
   gap: rem(4.7) rem(7.5);
-  grid-template-columns: 1fr rem(70) 1fr;
+  grid-template-columns: 1fr rem(55) 1fr;
   grid-template-rows: repeat(2, 1fr);
   border: none;
   margin: 0;
@@ -16,16 +16,7 @@
       grid-column: 1 / 2;
       align-self: center;
     }
-    &[for="default"] {
-      grid-column: 1 / 4;
-      grid-row: 2 / 3;
-      justify-self: center;
-      align-self: start;
-    }
-    &[for="light"] {
-      grid-column: 3 / 4;
-      align-self: center;
-    }
+    
   }
   &__wrapper {
     
@@ -37,7 +28,7 @@
   input[type="radio"] {
     cursor: pointer;
     opacity: 0;
-    margin: 0 -2px 0 -2px;
+    margin: 0 1px 0 -2px;
     height: rem(20);
     width: rem(24);
 
