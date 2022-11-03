@@ -12,6 +12,7 @@
   label {
     font-size: rem(14);
     justify-self: center;
+    color: var(--toggle);
     &[for="dark"] {
       grid-column: 1 / 2;
       align-self: center;

@@ -27,7 +27,7 @@
 .header__subtitle {
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--dark-text1);
+  color: var(--text-color2);
 }
 .header__toogle {
   margin-left: auto;

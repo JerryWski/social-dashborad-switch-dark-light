@@ -10,6 +10,7 @@
 .toggle label {
   font-size: 0.875rem;
   justify-self: center;
+  color: var(--toggle);
 }
 .toggle label[for=dark] {
   grid-column: 1/2;

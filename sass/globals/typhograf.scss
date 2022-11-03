@@ -8,10 +8,10 @@ h3 {
 }
 h1 {
   font-size: rem(24);
+  margin-bottom: rem(3);
   @include breakpoint(medium) {
     font-size: rem(28);
   }
-  margin-bottom: rem(3);
 }
 
 a,

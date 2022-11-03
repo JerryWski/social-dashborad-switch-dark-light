@@ -1,5 +1,5 @@
 :root {
-  --background: var(--dark-bg);
+  --background: var(--light-bg);
   --limegreen: hsl(163, 72%, 41%);
   --brightred: hsl(356, 69%, 56%);
   --facebook: hsl(208, 92%, 53%);
@@ -19,11 +19,35 @@
   --light-bg:hsl(0, 0%, 100%);
   --light-top-bg:hsl(225, 100%, 98%);
   --light-card:hsl(227, 47%, 96%);
+  --light-card-hover: hsl(228,33%, 91%);
   --light-text1:hsl(228, 12%, 44%);
   --light-text2:hsl(230, 17%, 14%);
   --card-hover:hsl(228,25%,27%);
+  --text-color: var(--light-text2);
+  --text-color2: var(--light-text1);
+  --card-bg: var(---light-card);
+  --card-hover: var(--light-card-hover);
+  --toggle: var(--toggle-light);
+  --toggle-bg: var(--toggle-bg-light);
+  --toggle-button: var(--toggle-button-light);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--dark-bg);
+    --text-color: var(--dark-text2);
+    --text-color2: var(--dark-text1);
+    --card-bg: var(--dark-card);
+    --card-hover: var(--dark-card-hover);
+    --toggle: var(--light-bg);
+    --toggle-bg: linear-gradient(
+      225deg,
+      var(--toggle-bg-end) 0%,
+      var(--toggle-bg-start) 98.02%
+    );
+    --toggle-button: var(--dark-bg);
+  }
+}
 :root {
   --font:"Inter",Georgia, sans-serif;
 }
@@ -44,7 +68,7 @@ body {
   padding: 0;
   font-family: var(--font);
   background: var(--background);
-  color: var(--dark-text2);
+  color: var(--text-color);
 }
 
 .visually-hidden {
@@ -119,7 +143,7 @@ a:active {
 .header__subtitle {
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--dark-text1);
+  color: var(--text-color2);
 }
 .header__toogle {
   margin-left: auto;
@@ -137,6 +161,7 @@ a:active {
 .toggle label {
   font-size: 0.875rem;
   justify-self: center;
+  color: var(--toggle);
 }
 .toggle label[for=dark] {
   grid-column: 1/2;
@@ -208,16 +233,16 @@ a:active {
 }
 
 .card {
-  background-color: var(--dark-card);
-  color: var(--dark-text1);
+  background: var(--card-bg);
+  color: var(--dark-tex1);
   position: relative;
   overflow: hidden;
   text-align: center;
   padding: 1.5625rem;
   border-radius: 0.3125rem;
   cursor: pointer;
-  -webkit-transition: background-color 0.2s ease-in;
-  transition: background-color 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
+  transition: background 0.2s ease-in;
 }
 .card--facebook {
   border-top: 0.3125rem solid var(--facebook);
@@ -258,6 +283,7 @@ a:active {
 .card__bottomtitle {
   font-size: 0.875rem;
   font-weight: 700;
+  color: var(--text-color2);
 }
 .card__icon {
   margin-right: 0.5rem;
@@ -265,6 +291,7 @@ a:active {
 .card__username {
   font-size: 0.75rem;
   font-weight: 700;
+  color: var(--text-color2);
 }
 .card__followers {
   margin-bottom: 1.5625rem;
@@ -283,7 +310,7 @@ a:active {
   font-size: 2rem;
 }
 .card__label {
-  color: var(--dark-text1);
+  color: var(--text-color2);
   font-size: 0.75rem;
   font-weight: 400;
   text-transform: uppercase;
