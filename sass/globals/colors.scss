@@ -22,11 +22,12 @@
     --light-card-hover: hsl(228,33%, 91%);
     --light-text1:hsl(228, 12%, 44%);
     --light-text2:hsl(230, 17%, 14%);
+    --background: var(--light-bg);
     
 }
 
 @media (prefers-color-scheme: dark) {
  :root {
-    
+    background: var(--dark-bg);
  }
 }
