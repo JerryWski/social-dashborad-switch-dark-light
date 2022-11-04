@@ -3,11 +3,17 @@
 .toggle {
   display: grid;
   gap: rem(4.7) rem(7.5);
-  grid-template-columns: 1fr rem(55) 1fr;
+  grid-template-columns: 1fr rem(55) 0fr;
   grid-template-rows: repeat(2, 1fr);
   border: none;
   margin: 0;
   cursor: pointer;
+
+  @include breakpoint-down(small) {
+    
+    gap: rem(4.7) rem(15.5);
+    grid-template-columns: 1fr 3.438rem 1fr;
+  }
 
   label {
     font-size: rem(14);
@@ -25,6 +31,11 @@
     height: rem(24);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+
+    @include breakpoint-down(small) {
+    
+      grid-column: 3 / 4;
+    }
   }
   input[type="radio"] {
     cursor: pointer;
