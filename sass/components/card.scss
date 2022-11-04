@@ -16,7 +16,7 @@
 
 
 .card {
-    background: var(--dark-card);
+    background: var(--card-bg);
     color: var(--dark-tex1);
     position: relative;
     overflow: hidden;
@@ -106,7 +106,6 @@
     }
 
     &__count {
-        color: #fff;
         font-weight: 700;
         letter-spacing: rem(-2);
         margin-bottom: rem(6);
@@ -152,5 +151,5 @@
 
 }
 .card:hover {
-    background-color: var(--dark-card-hover);
+    background-color: var(--card-hover); //--dark-card-hover
 }

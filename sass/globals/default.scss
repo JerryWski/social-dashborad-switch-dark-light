@@ -11,8 +11,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font);
-    background: var(--background);
-    color: var(--text-color);
+    background: var(--background); //change from --dark-bg
+    color: var(--text-color); //change from --dark-text1
     min-height: 150vh;
 }
 
