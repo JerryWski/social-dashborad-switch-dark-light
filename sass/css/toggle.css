@@ -31,7 +31,7 @@
 }
 @media (max-width: 39.9375em) {
   .toggle__wrapper {
-    grid-column: 3/4;
+    grid-column: 4/4;
   }
 }
 .toggle input[type=radio] {
